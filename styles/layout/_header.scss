@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+
+
+// NAV + 🍔 
+.burger-menu{
+    width: 120px;
+    // background-color: $color-blue-primary;
+    text-transform: uppercase;
+    padding:5px 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+
+    @include small{
+        display: none;
+        padding: 10px 40px;
+    }
+    // @media screen and (min-width:990px) {
+    //     display: none;
+    //     padding: 10px 40px;
+    // }
+
+    & a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color:#FFFFFF;
+    }
+    & img{
+        filter: invert(100%) sepia(9%) saturate(7465%) hue-rotate(203deg) brightness(104%) contrast(115%);
+        margin-right: 10px;
+    }
+}

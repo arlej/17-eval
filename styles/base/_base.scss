@@ -1,20 +1,86 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
+
+// x-large
+// medium
+// small 640 = call
+
+
 html{
     // font-size: 62.5%; /* Sets up the base 10 stuff */
+    color:$color-light-primary;
 }
 
 body{
     background: $color-white;
 }
-.container{
-    @include shadow();
-    @include grid;
+
+a{
+    @include link;
 }
 
-.btn{
-    display: block;
-    @include btn;
-    font-size: 1rem;
+// #region LINKS 🧲
+// TODO ajouter lien bleu + hover dark; dark + hover blue
+
+.link{
+    &-card{
+        text-transform: none;
+    }
+    &-underline:hover{
+        text-decoration: underline;
+    }
 }
+// #endregion
+
+
+
+
+// #region COLORS 🌈
+
+.ligth-primary{
+    color: $color-white;
+}
+.light-secondary{
+    color: $color-light-secondary;
+}
+.blue-primary{
+    color: $color-blue-primary;
+}
+.blue-secondary{
+    color: $color-blue-secondary
+}
+.dark-primary{
+    color: $color-dark-primary;
+}
+.dark-secondary{
+    color: $color-dark-secondary;
+}
+// #endregion
+
+// #region BACKGROUNDS🏳️‍🌈
+.bg-light-primary{
+    background-color: $color-white;
+}
+.bg-blue{
+    background-color: $color-blue-primary;
+}
+.bg-grey{
+    background-color: $color-light-secondary;
+}
+.bg-dark{
+    background-color: $color-dark-secondary;
+}
+
+.bg-ugly-01{
+    background-color: #f2f5f9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23d6d9dc' fill-opacity='0.4'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+.bg-ugly-02{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23e6e6e6' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.bg-ugly-03{
+
+}
+// #endregion

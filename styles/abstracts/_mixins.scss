@@ -4,7 +4,9 @@
     padding: $padding;
 
     text-decoration: none;
+    text-transform: uppercase;
     cursor: pointer;
+    
 }
 
 @mixin border($border, $padding){
@@ -70,7 +72,8 @@
 
 @mixin link() {
     text-decoration: none;
-    text-transform: uppercase;
+    color: #000;
+    // text-transform: uppercase;
 }
 
 @mixin box($width, $height) {
@@ -104,10 +107,14 @@
 
 // MEDIA QUERY
 $small: 640; // smartphones 
-$medium: 768; // tablets vert
+// $medium: 768; // tablets vert
+$medium: 700;
 $large: 990; // tablets horiz
-$x-large: 1280; // small laptops
-$xx-large: 1536; // bigger screens
+// $x-large: 1280; // small laptops
+$x-large: 1220;
+// $xx-large: 1536; // bigger screens
+$xx-large: 1335;
+
 
 @mixin small {
     @media only screen and (min-width: $small * 1px) {@content;}
