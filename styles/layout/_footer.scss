@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+.wrapper-footer{
+    padding-top:50px;
+}
+footer, footer a{
+    color:$color-light-primary;
+}
+.footer-logo img{
+    height:90px;
+    margin:auto;
+}
+.addresses a{
+
+}
+
+

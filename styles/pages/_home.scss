@@ -1,3 +1,69 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// #region🔸🔸🔸 SECTION 1 : BOARD
+.board{
+    flex-direction: column;
+    text-align: center;
+    padding:0px 20px;
+
+    @include small{
+        padding:0px 30px;
+    }
+    @include large{
+        flex-direction: row;
+        text-align: left;
+        padding:0px 50px;
+    }
+}
+// 🔸 LEFT
+.board-left{ 
+    & p{
+        margin:20px 0px;
+        font-size: 18px;
+    }
+}
+.main-title-context{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom:5px;
+}
+.main-title{
+    font-size: 30px;
+    color: $color-dark-primary;
+    @include small{
+        font-size: 60px;
+    }
+}
+
+
+// 🔸 RIGHT
+.board-right{
+    font-family: "Libre Baskerville", serif;
+    font-size: 22px;
+    width:80%;
+
+    @include large{
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+.signature{
+    font-weight: bold;
+    font-style: italic;
+    margin:10px 0px;
+}
+// #endregion
+
+
+// #region
+
+
+// #endregion
+
+
+// 🔸🔸🔸BESTEST
 .best{
     display: flex;
     flex-direction: row;

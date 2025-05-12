@@ -9,7 +9,8 @@
 
 html{
     // font-size: 62.5%; /* Sets up the base 10 stuff */
-    color:$color-light-primary;
+    color:$color-dark-secondary;
+    font-family: "Roboto", sans-serif;
 }
 
 body{
@@ -20,6 +21,19 @@ a{
     @include link;
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+    &-col{
+        flex-direction: column;
+    }
+}
+.grid{
+    @include grid;
+}
+
+
+
 // #region LINKS 🧲
 // TODO ajouter lien bleu + hover dark; dark + hover blue
 
@@ -27,17 +41,22 @@ a{
     &-card{
         text-transform: none;
     }
+    &-underlined{
+        text-decoration: underline;
+    }
     &-underline:hover{
         text-decoration: underline;
+    }
+    &-no-line:hover{
+        text-decoration: none;
+    }
+    &-blue{
+        color:$color-blue-primary;
     }
 }
 // #endregion
 
-
-
-
-// #region COLORS 🌈
-
+//#region colors 🌈
 .ligth-primary{
     color: $color-white;
 }
@@ -55,6 +74,9 @@ a{
 }
 .dark-secondary{
     color: $color-dark-secondary;
+}
+.dark-tertiary{
+    color: $color-dark-tertiary;
 }
 // #endregion
 
@@ -84,3 +106,38 @@ a{
 
 }
 // #endregion
+
+// #region BNT
+.btn{
+    @include btn;
+    border:none;
+    border-radius: 0%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    @include transition;
+
+    &-blue{
+        background-color: $color-blue-primary;
+        color:$color-light-primary;
+        &:hover{
+            opacity:80%;
+        }
+    }
+    &-dark{
+        background-color: $color-dark-secondary;
+        color:$color-light-primary;
+        &:hover{
+            opacity:80%;
+        }
+    }
+}
+// #endregion
+
+.wrapper{
+    margin:auto;
+    padding:100px 0px;
+}
+.size-center{
+    max-width: 1400px;
+    margin:auto;
+}
