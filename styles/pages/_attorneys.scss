@@ -1,0 +1,83 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// #region FILTERS
+.attorneys-filter{
+    justify-content: center;
+    gap:15px;
+    display: none;
+    @include x-large{
+        display: flex;
+    }
+}
+.filter-btn{
+    margin-top:35px;
+    background-color: $color-light-primary;
+    border:1px solid $color-dark-tertiary;
+    color:$color-dark-tertiary;
+    text-transform: none;
+    font-weight: normal;
+    border-radius: 5px;
+    &--active{
+        background-color: $color-blue-primary;
+        color:$color-light-primary;
+    }
+}
+
+// #endregion
+
+
+//#region ATTORNEYS
+.attorneys-box{
+    max-width: 1400px;
+    margin: auto;  
+}
+.attorneys-filter{
+
+}
+
+.attorneys-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap:25px;
+    padding:40px;
+    @include small{
+        grid-template-columns: repeat(3, 1fr);
+        gap:15px;
+    }
+    @include x-large{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+// PIX
+.attorney-pix{
+    position: relative;
+    cursor:pointer;
+    margin-bottom: 15px;
+}
+.attorney-pix::before{
+    @include overlay;
+    background-color:  rgba(7, 68, 175, 0.4);
+    opacity: 0%;
+    @include transition;
+}
+.attorney-pix:hover::before{
+    opacity: 100%;
+}
+
+// TXT
+.attorney-name{
+    color:$color-blue-primary;
+    font-size: 1.5rem;
+}
+.attorney-function{
+    text-transform: uppercase;
+    color:$color-dark-tertiary;
+}
+.attorney-text, .attorney-text a{
+    color:$color-dark-tertiary;
+    font-size: 0.9rem;
+}
+// #endregion
+
+

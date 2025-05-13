@@ -133,6 +133,8 @@
     padding: 60px 0px;
 }
 .legacy{
+    max-width: 1400px;
+    margin:auto;
     flex-direction: column;
     padding: 0px 30px;
 }
@@ -235,14 +237,114 @@
 // #endregion
 
 
-
 //#region 🔸🔸🔸 SECTION 4 : BEST🔵
 .best{
     justify-content: space-around;
     overflow: hidden;
+
 }
 .logo-best{
     max-height:150px;
     padding:10px;
 }
+// #endregion
+
+
+//#region 🔸🔸🔸 SECTION 5 : ARTICLES
+.wrapper-articles{
+    padding:0px;
+}
+.articles{
+    color:$color-light-primary;
+    flex-direction: column;
+    padding: 100px 0px;
+
+    @include x-large{
+        flex-direction: row;
+    }
+
+    background-image : linear-gradient(to bottom, rgba(7, 68, 175, 0.95), rgba(7, 68, 175, 0.5)), url('../../img/shutterstock_2314958033.jpg');
+    background-attachment: fixed;
+}
+.article{
+    text-align: center;
+    padding:10px 40px;
+    & .date{
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin:15px 0px;
+    }
+    &-title{
+        font-family: "Poppins", sans-serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color:$color-light-primary;
+    }
+    & .main-text{
+        margin-bottom: 25px;;
+    }
+    & .btn{
+        margin-bottom: 25px;
+        font-weight: normal;
+        &:hover{
+            color:$color-blue-primary;
+            background-color: $color-light-primary;
+        }
+    }
+    @include x-large{
+        text-align: left;
+    }
+}
+// #endregion
+
+
+// #region 🔸🔸🔸 CALL US!
+.call-us{
+    background-color: $color-blue-primary;
+    color: $color-light-primary;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:50px;
+    text-align: center;
+    padding-top:10px;
+    text-align: center;
+    border-top: 2px solid $color-light-primary;
+    
+    @include small{
+        display: none;
+    }
+}
+.call-us a{
+    width:100px;
+}
+.phone{
+    display: inline-block;
+    @include transition;
+    margin: 0px 10px;
+}
+.call-us:hover .phone {
+    
+    }
+// #endregion
+
+
+// #region 🔸🔸🔸 ACCESSIBILITY 
+.accessibility{
+    background-color: #1f5656;
+    width:fit-content;
+    border-radius: 50px;
+    position: fixed;
+    bottom:3%;
+    left:3%;
+    @include transition;
+    & img{
+        height:50px;
+    }
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+
 // #endregion

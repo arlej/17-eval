@@ -37,28 +37,52 @@
         </div>
     </header>
     <main>
-        <div class="wrapper-contact-form bg-ulgy-02">
-            <div class="contact-top">
-                <h2>Contact Hicks Thomas LLP</h2>
-                <h3>- Learn About Our Innovative Legal Solutions -</h3>
-                <div class="contact-form">
-                    <form action="">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Phone">
-                        <select name="pets" id="pet-select">
-                            <option value="" selected disabled>Are you a new client?</option>
-                            <option value="dog">Yes</option>
-                            <option value="cat">No</option>
-                            <option value="cat">Neither</option>
-                        </select>
-                        <p>Your privacy matters: We encourage you to contact us through this form. While reaching out does not create an attorney-client relationship, we value your privacy and will protect your information. Please avoid sharing confidential details until a formal relationship is established.</p>
-                        <button>Submit Form</button>
+        <div class="bg-ugly-01">
+            <!-- CONTACT TOP : FORM -->
+            <div class="wrapper-contact-form">
+                
+                <div class="contact-top">
+                <div class="form-container">
+                    <h1>Contact Hicks Thomas LLP</h1>
+                    <h3>- Learn About Our Innovative Legal Solutions -</h3>
+                    <form name="form-contact" >
+                        <div class="row">
+                            <div class="inline-block right-margin">
+                                <input type="text" class="input-field " placeholder="First name"/>
+                            </div>
+                            <div class="inline-block responsive">
+                                <input type="text" class="input-field " placeholder="Last name"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inline-block right-margin">
+                                <input type="text" class="input-field " placeholder="email" />
+                            </div>
+                            <div class="inline-block responsive">
+                                <input type="text" class="input-field " placeholder="phone" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <select name="client" id="client-select" class="input-field text-area">
+                                <option value="" selected disabled>Are you a new client?</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="neither">Neither</option>
+                            </select>
+                        </div>
+                        <div class="inline-block responsive">
+                            <textarea name="contact-message" placeholder="Message" class="input-field" cols="120" rows="6"></textarea>
+                        </div>
+                        <p class="privacy"><em><strong>Your privacy matters</strong>: We encourage you to contact us through this form. While reaching out does not create an attorney-client relationship, we value your privacy and will protect your information. Please avoid sharing confidential details until a formal relationship is established.</em></p>
+                        <div class="row">
+                            <input type="submit" class="btn btn-submit" value="Submit form" />
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
+        <div class="bg-ugly-02"></div>
+    </div>
     </main>
     <!-- FOOTER -->
     <footer class="bg-dark flex-col">
