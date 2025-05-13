@@ -4,6 +4,7 @@
 
 .wrapper-footer{
     padding-top:50px;
+    padding-bottom: 0px;;
 }
 footer, footer a{
     color:$color-light-primary;
@@ -12,8 +13,64 @@ footer, footer a{
     height:90px;
     margin:auto;
 }
-.addresses a{
+// ADDRESSES
+.addresses{
+
+    flex-wrap: wrap;
+    margin:50px auto;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include large{
+        flex-wrap: nowrap;
+    }
+    @include medium{
+        flex-direction: row;
+        align-items: start;
+    }
+}
+.address{
+    padding:0px 20px;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 0.9rem;    
+    width:50%;
+    margin-bottom:30px;
+    @include medium{
+        width:default;
+    }
 
 }
+.address p{
+    display: block;
+}
+.address h3{
+    font-size: 1.4rem;
+}
+// SOCIALS
+.socials{
+    width:200px;
+    margin:50px auto;
+    justify-content: space-around;
+    align-items: center;
+    & a{
+        @include transition;
+    }
+    & a:hover{
+        color:$color-blue-primary;
+    }
+}
+// LEGALS
+.legal-warning, .legals {
+    font-size: 0.9rem;
+}
+.legals{
+    padding:40px 0px 20px 0px;
+    justify-content: space-between;
+}
+
 
 

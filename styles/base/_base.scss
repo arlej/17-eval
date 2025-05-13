@@ -32,7 +32,18 @@ a{
     @include grid;
 }
 
-
+.main-title-context{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom:5px;
+}
+.main-title{
+    font-size: 30px;
+    color: $color-dark-primary;
+    @include small{
+        font-size: 60px;
+    }
+}
 
 // #region LINKS 🧲
 // TODO ajouter lien bleu + hover dark; dark + hover blue
@@ -52,6 +63,12 @@ a{
     }
     &-blue{
         color:$color-blue-primary;
+    }
+    &-dark{
+        color: $color-dark-primary;
+    }
+    &-light{
+        color: $color-light-primary;
     }
 }
 // #endregion

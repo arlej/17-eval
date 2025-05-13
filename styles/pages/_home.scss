@@ -23,18 +23,7 @@
         font-size: 18px;
     }
 }
-.main-title-context{
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom:5px;
-}
-.main-title{
-    font-size: 30px;
-    color: $color-dark-primary;
-    @include small{
-        font-size: 60px;
-    }
-}
+
 
 
 // 🔸 RIGHT
@@ -57,19 +46,203 @@
 // #endregion
 
 
-// #region
+// #region 🔸🔸🔸 SECTION 2 : OUR ATTORNEYS 🔵
+.wrapper-attorneys{
+    padding: 50px 0px;
+}
+.meet-attorneys{
+    padding:20px;
+}
+.meet-attorneys, .meet-attorneys .main-title{
+    color:$color-light-primary;
+    flex-direction: column;
+    @include large{
+        flex-direction: row;
+    }
+}
+.meet-attorneys .main-title{
+    font-size: 2rem;
+}
 
+// PIX
+.meet-attorneys-pix{
+    @include large{
+        padding:40px 100px;
+    }
+}
+.trombi-round{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: url('../../img/BradleyBenbrook.jpg6_.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;
+    border: 20px solid $color-blue-secondary;
+    @include large{
+        width: 450px;
+        height: 450px;
+        border: 30px solid $color-blue-secondary;
+    }
+}
+.trombi-round::after{
+    content: "Bradley Benbrook";
+    @include absolute(95%);
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #0F3447, #0744af);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius:20px;
+    padding:10px 20px;
+    text-wrap: nowrap;
+    text-align: center;
+}
+.trombi-round img{
+    width: 100%;
+    height : 100%;
+    object-fit: contain;
+}
+// TXT
+.meet-attorneys-txt .main-title-context{
+    font-weight: normal;
+    margin-bottom: 0px;
+    text-transform: none;
+    font-size: 1.2rem;
+}
+.meet-attorneys .btn{
+    font-weight: normal;
+    border-radius: 5px;
+    text-transform: uppercase;
+    &:hover{
+        background-color:$color-dark-primary;
+        color:$color-light-primary;
+    }
+}
+
+.main-txt{
+    margin:20px 0px;
+    font-size: 1.1rem;
+}
 
 // #endregion
 
 
-// 🔸🔸🔸BESTEST
-.best{
+// #region 🔸🔸🔸 SECTION 3 : LEGACY ◻️◻️◻️
+
+.wrapper-legacy{
+    padding: 60px 0px;
+}
+.legacy{
+    flex-direction: column;
+    padding: 0px 30px;
+}
+.legacy-top{
+    flex-direction: column;
+    & .main-title-context{
+        color:$color-blue-primary;
+    }
+    & .main-title{
+        font-size: 2.2rem;
+    }
+    & .main-txt{
+        font-size: 1.1rem;
+        color: $color-dark-tertiary;
+        text-align: center;
+        @include large{
+            text-align: left;
+        }
+    }
+    @include large{
+        justify-content: start;
+        align-items: start;
+    }
+}
+// 🔸CARDS
+.legacy-grid{
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    @include medium{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include xx-large{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.card{
+    border-radius: 5px;
+    padding:20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+    @include transition;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    @include medium{
+        height: 350px;
+    }
+    @include large{
+        height: 330px;
+    }
+}
+.card:hover{
+    transform: translateY(-10px);
+    & .line{
+        width:100%;
+        color:$color-blue-primary;
+    }
+    & .card-txt{
+        color:$color-blue-primary;
+    }
+}
+.card-title{
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+.card-txt{
+    color:$color-dark-secondary;
+    margin-bottom: 30px;
+}
+.card-link{
+    margin:20px 0px 10px 0px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color:$color-blue-secondary;
+}
+.line{
+    width:85px;
+    height:3px;
+    @include transition;
+    color:$color-light-secondary;
+    background-color: $color-blue-secondary;
+    border:none;
+    border-radius: 5px;;
+}
+.card-dark{
+    background-color: $color-dark-secondary;
+    color:$color-light-primary;
+    & .card-txt{
+        color:$color-light-primary;
+    }
+    & .card-link{
+        color:$color-light-primary;
+    }
+}
+.card-dark:hover .card-txt{
+        color:$color-light-primary;
+}
+
+// #endregion
+
+
+
+//#region 🔸🔸🔸 SECTION 4 : BEST🔵
+.best{
     justify-content: space-around;
     overflow: hidden;
 }
 .logo-best{
     max-height:150px;
+    padding:10px;
 }
+// #endregion

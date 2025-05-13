@@ -14,20 +14,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER -->
+    <!-- HEADER + HERO  -->
     <header>
+        <!-- LOGO + NAV -->
         <div class="header-top flex">
+            <!-- LOGO -->
             <div class="logo logo-header">
-                <a href="index.html"><img src="./img/hicks-thomas-logo-new-white.png" class="logo-top" alt="hicks-thomas-logo"></a>
+                <a href="index.html"><img src="./img/hicks-thomas-logo-new-blue-mark.png" class="logo-top" alt="hicks-thomas-logo"></a>
             </div>
-            <div class="burger-menu"><i class="fa-solid fa-bars"></i></div>
-            <nav>
-                <a href="index.html" class="link white">Home</a>
+            <!--BURGRE MENU  -->
+            <div class="burger-menu flex"><i class="fa-solid fa-bars"></i></div>
+            <!-- NAVIGATION -->
+            <nav class="main-nav">
+                <a href="index.html" class="link header-link  link-dark">Home</a>
                 <a href="attorneys.html" class="link header-link">Attorneys</a>
                 <a href="#" class="link header-link">Practice Areas</a>
                 <a href="#" class="link header-link">News</a>
                 <a href="#" class="link header-link">Video Center</a>
                 <a href="contact.html" class="link header-link">Contact</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
             </nav>
         </div>
     </header>
@@ -54,36 +59,65 @@
         </div>
     </main>
     <!-- FOOTER -->
-    <footer class="light-primary bg-dark">
-        <div class="footer-logo">
-            <a href="#"><img src="./img/hicks-thomas-logo-new-white.png" class="logo-footer" alt="hicks-thomas-logo"></a>
-        </div>
-        <div class="addresses">
-            <div class="address">
-                <h3 class="address-title">Houston</h3>
-                <p>700 Louisiana St. Suite 2300 Houston, TX 77002</p>
-                <a href="#" class="link-footer">713-547-9100</a>
-                <a href="#" class="link-footer"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+    <footer class="bg-dark flex-col">
+        <div class="wrapper wrapper-footer size-center">
+            <div class="footer-logo">
+                <a href="#"><img src="./img/hicks-thomas-logo-new-white.png" class="logo-footer" alt="hicks-thomas-logo"></a>
             </div>
-            <div class="address">
-                <h3 class="address-title">Austin</h3>
-                <p>111 Congress Ave.
-                    Suite 1010
-                    Austin, TX 78701</p>
-                <a href="#" class="link-footer">512-827-7990</a>
-                <a href="#" class="link-footer"<i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+            <div class="addresses flex">
+                <div class="address">
+                    <h3 class="address-title">Houston</h3>
+                    <p>700 Louisiana St. <br>Suite 2300 Houston, <br>TX 77002</p>
+                    <a href="#" class="link-footer link-underline">713-547-9100</a>
+                    <a href="#" class="link-footer link-underline"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+                </div>
+                <div class="address">
+                    <h3 class="address-title">Austin</h3>
+                    <p>111 Congress Ave.<br>
+                        Suite 1010<br>
+                        Austin, TX 78701</p>
+                    <a href="#" class="link-footer link-underline">512-827-7990</a>
+                    <a href="#" class="link-footer link-underline"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+                </div>
+                <div class="address">
+                    <h3 class="address-title">Amarillo</h3>
+                    <p>619 S. Tyler St.<br>
+                        Suite 80B<br>
+                        Amarillo, TX 79101</p>
+                    <a href="#" class="link-footer link-underline">806-310-9990</a>
+                    <a href="#" class="link-footer link-underline"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+                </div>
+                <div class="address">
+                    <h3 class="address-title">Beaumont</h3>
+                    <p>2615 Calder Ave. <br>
+                        Suite 720 <br>
+                        Beaumont, TX 77702</p>
+                    <a href="#" class="link-footer link-underline">409-241-7252</a>
+                    <a href="#" class="link-footer link-underline"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+                </div>
+                <div class="address">
+                    <h3 class="address-title">Sacramento</h3>
+                    <p>701 University Ave. <br>
+                    Suite 106 <br>
+                    Sacramento, CA 95825</p>
+                    <a href="#" class="link-footer link-underline">916-447-4900</a>
+                    <a href="#" class="link-footer link-underline"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+                </div>
+                
             </div>
-            <div class="socials">
-                <a href="#" class="link link-footer"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#" calss="link link-footer"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#" class="link link-footer"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="link link-footer"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="#" class="link link-footer"><i class="fa-brands fa-google"></i></a>
+            <div class="socials flex">
+                <a href="#" class="link"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" calss="link"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="link"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#" class="link"><i class="fa-brands fa-google"></i></a>
             </div>
             <div class="legal-warning">UNLESS OTHERWISE NOTED, OUR LAWYERS ARE NOT CERTIFIED BY THE TEXAS BOARD OF LEGAL SPECIALIZATION. The publications contained in this site do not constitute legal advice. Legal advice can only be with knowledge of the clients specific facts. By putting these publications on our website, we do not intend to create a lawyer-client relationship with the user. Materials may not reflect the most current legal developments, verdicts or settlements. This information should in no way be taken as an indication for future results</div>
-            <div class="legals">
-                <p>© 2025 <a href="#" class="link link-footer">Hicks Thomas LLP</a> | <a href="#" class="link link-footer">Privacy Policy</a> | <a href="#" class="link link-footer">Site Map</a></p>
-                <p></p>
+            <div class="legals flex">
+                <span> © 2025 <a href="#" class="link link-underline">Hicks Thomas LLP</a> |
+                <a href="#" class="link link-underline">Privacy Policy</a> |
+                <a href="#" class="link link-underline">Site Map</a></p></span>
+                <span><a href="#" class="link link-underline">Law Firm Website Design</a> by Dan Gilroy Design</span>
             </div>
         </div>
     </footer>

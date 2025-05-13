@@ -20,6 +20,7 @@
         <video class="hero-video" autoplay loop muted>
             <source src="vid/iStock-1240812517.mp4" type="video/mp4">
         </video>
+        <div class="overlay"></div>
         <!-- LOGO + NAV -->
         <div class="header-top flex">
             <!-- LOGO -->
@@ -30,13 +31,13 @@
             <div class="burger-menu flex"><i class="fa-solid fa-bars"></i></div>
             <!-- NAVIGATION -->
             <nav class="main-nav">
-                <a href="index.html" class="link white">Home</a>
-                <a href="attorneys.html" class="link header-link">Attorneys</a>
-                <a href="#" class="link header-link">Practice Areas</a>
-                <a href="#" class="link header-link">News</a>
-                <a href="#" class="link header-link">Video Center</a>
-                <a href="contact.html" class="link header-link">Contact</a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                <a href="index.html" class="link link-light">Home</a>
+                <a href="attorneys.html" class="link link-light">Attorneys</a>
+                <a href="#" class="link link-light">Practice Areas</a>
+                <a href="#" class="link link-light">News</a>
+                <a href="#" class="link link-light">Video Center</a>
+                <a href="contact.html" class="link link-light">Contact</a>
+                <a href="#" class="link-light"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
             </nav>
         </div>
         <div class="hero-middle flex-col">
@@ -68,51 +69,94 @@
         </div>
 
         <!-- SECTION 2 : OUR ATTORNEYS 🔵 -->
-        <div class="wrapper bg-blue">
-            <section class="meet-attorneys size-center light-primary">
-                <div class="meet-attorneys-left">
-                    <div class="trombi-round">
-                        <img src="./img/BradleyBenbrook.jpg6_.jpg" alt="Bradley Benbrook">
-                    </div>
+        <div class="wrapper wrapper-attorneys bg-blue">
+            <section class="meet-attorneys size-center flex">
+                <div class="meet-attorneys-pix">
+                    <div class="trombi-round"></div>
                 </div>
-                <div class="meet-attorneys-right">
+                <div class="meet-attorneys-txt">
                     <p class="main-title-context">A Unique Perspective <i class="fa-solid fa-arrow-right"></i></p>
                     <h3 class="main-title main-title-smaller">Houston's Top Litigation Attorneys</h3>
-                    <p class="main-text">How do our clients describe us? They call us sophisticated legal strategists and creative problem solvers, bringing unique perspectives to every case. Our Houston attorneys' diverse experience and proven results offer peace of mind, even in high-stakes situations. We have the resources to handle complex cases while providing personalized attention to your company's needs.</p>
-                    <button class="btn btn-white"><i class="fa-solid fa-circle-play"></i> Contact Hicks Thomas</button>
+                    <p class="main-txt">How do our clients describe us? They call us sophisticated legal strategists and creative problem solvers, bringing unique perspectives to every case. Our Houston attorneys' diverse experience and proven results offer peace of mind, even in high-stakes situations. We have the resources to handle complex cases while providing personalized attention to your company's needs.</p>
+                    <button class="btn btn-white"><i class="fa-solid fa-circle-play"></i> Meet our attorneys</button>
                 </div>
             </section>
         </div>
         <!-- SECTION 3 : LEGACY ◻️◻️◻️ -->
-        <div class="wrapper bg-white bg-logo">
-            <section class="legacy">
-                <div class="legacy-top">
+        <div class="wrapper wrapper-legacy bg-white bg-logo">
+            <section class="legacy flex">
+                <div class="legacy-top flex">
                     <p class="main-title-context">Our Work <i class="fa-solid fa-arrow-right"></i></p>
                     <h3 class="main-title main-title-smaller">A Legacy of Winning</h3>
-                    <p class="main-text">Hicks Thomas LLP is a litigation boutique with extensive expertise across a wide range of industries. We represent both plaintiffs and defendants in business and tort litigation. Our experience includes energy, environmental and toxic torts, antitrust and anti-competitive practices, employment and labor disputes, as well as product liability cases. Since our founding in 1997, we have consistently delivered successful results in complex cases, building a reputation for excellence, efficiency, and outstanding client service.</p>
+                    <p class="main-txt">Hicks Thomas LLP is a litigation boutique with extensive expertise across a wide range of industries. We represent both plaintiffs and defendants in business and tort litigation. Our experience includes energy, environmental and toxic torts, antitrust and anti-competitive practices, employment and labor disputes, as well as product liability cases. Since our founding in 1997, we have consistently delivered successful results in complex cases, building a reputation for excellence, efficiency, and outstanding client service.</p>
                 </div>
-                <div class="legacy-grid">
+                <div class="legacy-grid grid">
                     <a href="#"class="link link-card">
                         <div class="card bg-grey">
                             <div class="card-title">Appellate Litigation</div>
                             <div class="card-txt">Hicks Thomas LLP specializes in appellate litigation, adeptly handling appeals of trial court rulings. Our skilled lawyers anticipate, prepare for, and successfully argue appeals, ensuring favorable outcomes in higher courts.</div>
-                            <div class="card-link"><span><i class="fa-duotone fa-circle-caret-right" aria-hidden="true"></i>Learn More</span></div>
+                            <hr class="line">
+                            <div class="card-link"><span><i class="fa-solid fa-circle-play"></i> Learn More</span></div>
                         </div>
                     </a>
                     <a href="#"class="link link-card">
-                        <div class="card card-contact bg-dark">
-                            <div class="card-title">Gat started here</div>
-                            <div class="card-txt">Reach out to Hicks Thomas LLP for trusted legal support. Our experienced attorneys are here to safeguard your business and deliver solid results.</div>
-                            <div class="card-link"><span><i class="fa-duotone fa-circle-caret-right" aria-hidden="true"></i>Learn More</span></div>
+                        <div class="card bg-grey">
+                            <div class="card-title">Business Litigation</div>
+                            <div class="card-txt">Hicks Thomas LLP excels in litigating complex business disputes, devising strategic solutions tailored to your business needs, ensuring the best possible outcomes.</div>
+                            <hr class="line">
+                            <div class="card-link"><span><i class="fa-solid fa-circle-play"></i> Learn More</span></div>
                         </div>
                     </a>
+                    <a href="#"class="link link-card">
+                        <div class="card bg-grey">
+                            <div class="card-title">Construction Litigation</div>
+                            <div class="card-txt">We efficiently resolve construction disputes at all stages, minimizing disruption and expense. Through negotiation, litigation, or arbitration, we protect clients' investments and relationships in the construction industry.</div>
+                            <hr class="line">
+                            <div class="card-link"><span><i class="fa-solid fa-circle-play"></i> Learn More</span></div>
+                        </div>
+                    </a>
+                    <a href="#"class="link link-card">
+                        <div class="card bg-grey">
+                            <div class="card-title">Energy Litigation</div>
+                            <div class="card-txt">Hicks Thomas LLP's energy trial lawyers handle complex legal disputes in the high-risk oil and gas sector. With extensive court and arbitration experience, we protect your interests, minimize risk, and maximize returns.</div>
+                            <hr class="line">
+                            <div class="card-link"><span><i class="fa-solid fa-circle-play"></i> Learn More</span></div>
+                        </div>
+                    </a>
+                    <a href="#"class="link link-card">
+                        <div class="card bg-grey">
+                            <div class="card-title">Environmental & Natural Resources Litigation</div>
+                            <div class="card-txt">Hicks Thomas handles environmental claims, navigating regulations and defending businesses in air, water, soil, and groundwater litigation, backed by a proven track record of success in complex environmental cases.</div>
+                            <hr class="line">
+                            <div class="card-link"><span><i class="fa-solid fa-circle-play"></i> Learn More</span></div>
+                        </div>
+                    </a>
+                    <a href="#"class="link link-card">
+                        <div class="card bg-grey">
+                            <div class="card-title">Health Care Litigation</div>
+                            <div class="card-txt">Hicks Thomas LLP excels in managed care litigation, representing organizations in high-stakes disputes involving ERISA, reimbursement claims, and provider networks, delivering strategic counsel and precedent-setting victories nationwide.</div>
+                            <hr class="line">
+                            <div class="card-link"><span><i class="fa-solid fa-circle-play"></i> Learn More</span></div>
+                        </div>
+                    </a>
+                    <!-- CARD DARK -->
+                    <a href="#"class="link link-card">
+                        <div class="card card-dark">
+                            <div class="card-title">Get Started Here</div>
+                            <div class="card-txt">
+                                Reach out to Hicks Thomas LLP for trusted legal support. Our experienced attorneys are here to safeguard your business and deliver solid results.</div>
+                            <hr class="line">
+                            <div class="card-link"><span><i class="fa-solid fa-circle-play"></i> Learn More</span></div>
+                        </div>
+                    </a>
+                    
                     
                 </div>
             </section>
         </div>
-        <!-- SECTION THE BEST 🔵 -->
+        <!-- SECTION 4 : BEST 🔵 -->
         <div class="wrapper bg-blue">
-            <div class="best">
+            <div class="best flex">
                 <img src="img/logo-best-02.png" class="logo-best" alt="logo best">
                 <img src="img/logo-best-01.png" class="logo-best" alt="logo best">
                 <img src="img/logo-best-03.png" class="logo-best" alt="logo best">
@@ -151,34 +195,60 @@
             <div class="footer-logo">
                 <a href="#"><img src="./img/hicks-thomas-logo-new-white.png" class="logo-footer" alt="hicks-thomas-logo"></a>
             </div>
-            <div class="addresses">
+            <div class="addresses flex">
                 <div class="address">
                     <h3 class="address-title">Houston</h3>
-                    <p>700 Louisiana St. Suite 2300 Houston, TX 77002</p>
+                    <p>700 Louisiana St. <br>Suite 2300 Houston, <br>TX 77002</p>
                     <a href="#" class="link-footer link-underline">713-547-9100</a>
                     <a href="#" class="link-footer link-underline"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
                 </div>
                 <div class="address">
                     <h3 class="address-title">Austin</h3>
-                    <p>111 Congress Ave.
-                        Suite 1010
+                    <p>111 Congress Ave.<br>
+                        Suite 1010<br>
                         Austin, TX 78701</p>
                     <a href="#" class="link-footer link-underline">512-827-7990</a>
-                    <a href="#" class="link-footer link-underline"<i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+                    <a href="#" class="link-footer link-underline"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+                </div>
+                <div class="address">
+                    <h3 class="address-title">Amarillo</h3>
+                    <p>619 S. Tyler St.<br>
+                        Suite 80B<br>
+                        Amarillo, TX 79101</p>
+                    <a href="#" class="link-footer link-underline">806-310-9990</a>
+                    <a href="#" class="link-footer link-underline"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+                </div>
+                <div class="address">
+                    <h3 class="address-title">Beaumont</h3>
+                    <p>2615 Calder Ave. <br>
+                        Suite 720 <br>
+                        Beaumont, TX 77702</p>
+                    <a href="#" class="link-footer link-underline">409-241-7252</a>
+                    <a href="#" class="link-footer link-underline"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
+                </div>
+                <div class="address">
+                    <h3 class="address-title">Sacramento</h3>
+                    <p>701 University Ave. <br>
+                    Suite 106 <br>
+                    Sacramento, CA 95825</p>
+                    <a href="#" class="link-footer link-underline">916-447-4900</a>
+                    <a href="#" class="link-footer link-underline"><i class="fa-solid fa-location-dot icon"></i> Map & Directions</a>
                 </div>
                 
             </div>
-            <div class="socials">
-                <a href="#" class="link link-footer"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#" calss="link link-footer"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#" class="link link-footer"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="link link-footer"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="#" class="link link-footer"><i class="fa-brands fa-google"></i></a>
+            <div class="socials flex">
+                <a href="#" class="link"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" calss="link"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="link"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#" class="link"><i class="fa-brands fa-google"></i></a>
             </div>
             <div class="legal-warning">UNLESS OTHERWISE NOTED, OUR LAWYERS ARE NOT CERTIFIED BY THE TEXAS BOARD OF LEGAL SPECIALIZATION. The publications contained in this site do not constitute legal advice. Legal advice can only be with knowledge of the clients specific facts. By putting these publications on our website, we do not intend to create a lawyer-client relationship with the user. Materials may not reflect the most current legal developments, verdicts or settlements. This information should in no way be taken as an indication for future results</div>
-            <div class="legals">
-                <p>© 2025 <a href="#" class="link link-footer">Hicks Thomas LLP</a> | <a href="#" class="link link-footer">Privacy Policy</a> | <a href="#" class="link link-footer">Site Map</a></p>
-                <p></p>
+            <div class="legals flex">
+                <span> © 2025 <a href="#" class="link link-underline">Hicks Thomas LLP</a> |
+                <a href="#" class="link link-underline">Privacy Policy</a> |
+                <a href="#" class="link link-underline">Site Map</a></p></span>
+                <span><a href="#" class="link link-underline">Law Firm Website Design</a> by Dan Gilroy Design</span>
             </div>
         </div>
     </footer>
